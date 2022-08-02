@@ -1,0 +1,22 @@
+on: 
+  push:
+    branches:
+    - master
+    tags-ignore:
+      - '*.*'
+
+jobs:
+  build:
+    - name: Login to GitHub Container Registry
+      uses: docker/login-action@v2
+      with:
+        registry: ghcr.io
+        username: ${{ github.actor }}
+        password: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: build and push ghcr.io
+      id: build-and-push
+      uses: docker/build-push-action@v3.1.0
+      with:
+        push: true
+        tags: ${{ github.repository }}:latest
