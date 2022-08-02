@@ -8,17 +8,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wert-io/ETH-infrastructure.git"
+    "url": "git+https://github.com/wert-io/smartcontracts-proxy.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/wert-io/ETH-infrastructure/issues"
+    "url": "https://github.com/wert-io/smartcontracts-proxy/issues"
   },
-  "homepage": "https://github.com/wert-io/ETH-infrastructure#readme",
+  "homepage": "https://github.com/wert-io/smartcontracts-proxy#readme",
   "dependencies": {
-    "@openzeppelin/contracts": "^4.4.0",
-    "@walletconnect/truffle-provider": "^1.7.0",
+    "@openzeppelin/contracts": "^4.7.2",
+    "@walletconnect/truffle-provider": "^1.7.8",
+    "@truffle/hdwallet-provider": "^2.0.13",
     "openzeppelin-solidity": "^4.4.0",
     "truffle-privatekey-provider": "^1.5.0"
   },
