@@ -21,4 +21,4 @@ jobs:
       uses: docker/build-push-action@v3.1.0
       with:
         push: true
-        tags: ${{ github.repository }}:latest
+        tags: ghcr.io/${{ github.repository }}:latest
